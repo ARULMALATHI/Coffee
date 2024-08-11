@@ -1,0 +1,646 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: 'Poppins', sans-serif;
+}
+.html {
+  font-size: 62.5%;
+}
+body{
+
+  font-family: Arial, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #cf6903;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color:#632f14;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #cf6903;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #fd9105;
+}
+
+.hero-section {
+  height: 100vh;
+  background:linear-gradient(
+    rgba(4, 4, 4, 0.769),
+    rgba(31, 28, 28, 0.283)
+  ), url("https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?t=st=1722765844~exp=1722769444~hmac=d6833a178d7f9087cc626ec3757cc7c1691da1367f1a212ba501bfcb079fa4de&w=996");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.hero-section .content button {
+  background: #cf6903;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #632f14;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.speciality {
+  padding: 40px 20px;
+  background-color: #2d1d0a;
+  text-align: center;
+}
+
+.speciality h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fefefe;
+}
+
+.speciality-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.speciality-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.speciality-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.speciality-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.speciality-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+
+
+.menu {
+  padding: 40px 20px;
+  background-color: #39281d;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #faf6f6;
+}
+
+.menu-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.162);
+  width: 250px;
+  text-align: left;
+  transition: 2s ease-in-out;
+}
+.menu-item:hover{
+  transform: scale(1.1);
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.menu-item span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.desserts {
+ 
+  padding: 40px 20px;
+  background-color: #412514;
+  text-align: center;
+}
+
+.desserts h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fdfafa;
+}
+
+.dessert-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  
+  margin: 0 auto;
+}
+
+.dessert-item {
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0;
+ margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.dessert-item img {
+  width: 260px;
+  max-width: 100%;
+  height:230px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.dessert-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c2929;
+}
+
+.dessert-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+.video-section {
+  height: 400px;
+  /* padding: 1rem ; */
+  background-color: #403c3c;
+  text-align: center;
+}
+
+.video-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.video-wrapper {
+  width: 100%;
+  
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 400px; /* Adjusted to smaller height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the video covers the container */
+}
+
+
+.about-us {
+  background: linear-gradient(rgba(35, 33, 33, 0.365),rgba(0, 0, 0, 0.192)), url('https://img.freepik.com/free-photo/steam-rises-as-coffee-cools-night-generated-by-ai_188544-10245.jpg?t=st=1722772168~exp=1722775768~hmac=2fd06abde9983a51cd4924d42c9bc6dcb341e95a73adc238ed780be4dcce03ce&w=996') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align:start;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+
+.services {
+  padding: 40px 20px;
+  background-color: #412514;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fdfdfd;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.service-item img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* ........./ Review /.......... */
+
+#review{
+  padding: 5rem 0;
+  background: rgb(40, 26, 18);
+}
+
+.review-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #f4eeee;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.review-box .checked {
+  color: #ff9529;
+}
+
+.review-box .review-text {
+  margin: 1rem 0;
+  color: #efe9e9;
+}
+
+.review-box {
+  text-align: center;
+  padding: 1rem;
+  color: #efe9e9;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.reservation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #342e2b;
+}
+
+.reservation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.reservation-form {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.reservation-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-form label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.reservation-form input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.reservation-form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #cf6903;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reservation-form button:hover {
+  background: #632f14;
+}
+
+.reservation-image {
+  margin-top: 110px;
+  flex: 1;
+  text-align: center;
+}
+
+.reservation-image img {
+  
+  max-width: 100%;
+  height: 400px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #060606;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f9f9f9;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: #bbb;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+  .review-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+}
